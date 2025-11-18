@@ -15,7 +15,3 @@ The main goal for me is to take myself from a complete beginner to someone who c
 3.  Build a portfolio-ready site so I can move on to learning Flask/backend development next!
 
 
-
-## 📄 License
-
-This project is open-sourced under the **MIT License**.
