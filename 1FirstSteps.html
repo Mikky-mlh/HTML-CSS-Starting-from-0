@@ -16,9 +16,27 @@
             <br>
             <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"> Cat Photo App</a>
             <!--This is an empty anchor tag linking to the image source.-->
-            <section>
-                <h2>Cats are cute !</h2> <!--Section tag is used to create sections in a webpage.-->
-                <p>JUST LOOK AT THEM!</p>
+            <section><!--Section tag is used to create sections in a webpage.-->
+                <h2>Cats are cute !</h2> <!--When we add a lower rank heading element to the page, it's implied that we're starting a new subsection.-->
+                <ul> <!--Unordered list is created using <ul> tag.-->
+                    <li>Cats are good pets.</li> <!--List items are created using <li> tag.-->
+                    <li>Cats are very playful.</li>
+                </ul>
+                <figure> <!--The figure element represents self-contained content and will allow you to associate an image with a caption.-->
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption><em>LASAGNA</em></figcaption><!--The figcaption element defines a caption for a figure element. em makes it italic-->
+                </figure>
+                <h3>Top 3 best sports according to me <em><strong>(I AM STUPID)</strong></em>:</h3>
+                <ol> <!--Ordered list is created using <ol> tag. strong for bold-->
+                <li>Football</li>
+                <li>F1</li> 
+                <li>Chess</li>
+                </ol>
+                <form action="/my-handling-form-page" method="post">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="user_name">
+                    <input type="submit" value="Submit">
+                </form>
             </section>
         </body>
     </main> <!--Main section of the webpage.-->
