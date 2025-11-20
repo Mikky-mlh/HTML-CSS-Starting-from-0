@@ -1,42 +1,74 @@
 <!--  HTML starts with html tag with body and head sections. Every section ends with /tags respectively. -->
-<html>
+<!DOCTYPE html>
+<html lang="en"> <!--lang attribute is used to specify the language of the webpage.-->
     <head>
+        <meta charset="UTF-8"> <!--Meta tag is used to specify the character set.-->
         <title>FIRST STEPS</title> <!--Title tag is used to give title to the webpage. It appears on the browser tab.-->
     </head>
     <main>
         <body>
-            <h1>CATS</h1> <!--We write headings using <h1> to <h6> tags. Lower the heading number, higher is its importance.-->
-            <p>This webpage is about cats.</p> <!--We write paragraphs using <p> tag.-->
+            <header> <!--Header tag is used to create headers in a webpage.-->
+                <h1>HTML FIRST STEPS</h1>
+            </header>
+
+            <!--We write headings using <h1> to <h6> tags. Lower the heading number, higher is its importance.-->
+            <section>
+                <p>
+                    This webpage is about starting with HTML.
+                    <br> <!--Line break element is written using <br> tag with no closing tag. It creates a new line.-->
+                    <br>
+                    This is the first step towards frontend development.
+                    <br>
+                    Here's a cute cat image to get started😊
+                    <br> <br>
+                </p> <!--We write paragraphs using <p> tag.-->
                 <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."> <!--Image element is written using <img> tag with no closing tag. src shows where's the image and alt shows alternative text. -->
-                <br> <!--Line break element is written using <br> tag with no closing tag. It creates a new line.-->
+                <br> <br>
                 See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery. <!--Anchor tag is used to create hyperlinks. href attribute contains the link. The words just before the anchor tag is the link text.-->
-            <br>
-            Check out <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> 
-            <!-- target="_blank" makes the link open in a new tab. -->
-            <br>
-            <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"> Cat Photo App</a>
-            <!--This is an empty anchor tag linking to the image source.-->
+                <br> <br>
+                Check out <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> 
+                <!-- target="_blank" makes the link open in a new tab. -->
+                <br> <br>
+                <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"> Cat Photo App</a>
+                <!--This is an empty anchor tag linking to the image source.-->
+            </section>
+
             <section><!--Section tag is used to create sections in a webpage.-->
-                <h2>Cats are cute !</h2> <!--When we add a lower rank heading element to the page, it's implied that we're starting a new subsection.-->
+                <h2>HTML USES</h2> <!--When we add a lower rank heading element to the page, it's implied that we're starting a new subsection.-->
                 <ul> <!--Unordered list is created using <ul> tag.-->
-                    <li>Cats are good pets.</li> <!--List items are created using <li> tag.-->
-                    <li>Cats are very playful.</li>
+                    <li>Basic website structure.</li> <!--List items are created using <li> tag.-->
+                    <li>Great learning curve.</li>
                 </ul>
                 <figure> <!--The figure element represents self-contained content and will allow you to associate an image with a caption.-->
                     <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-                    <figcaption><em>LASAGNA</em></figcaption><!--The figcaption element defines a caption for a figure element. em makes it italic-->
+                    <figcaption>Eat some <em>LASAGNA</em> 🍝 </figcaption><!--The figcaption element defines a caption for a figure element. em makes it italic-->
                 </figure>
                 <h3>Top 3 best sports according to me <em><strong>(I AM STUPID)</strong></em>:</h3>
                 <ol> <!--Ordered list is created using <ol> tag. strong for bold-->
-                <li>Football</li>
-                <li>F1</li> 
-                <li>Chess</li>
+                    <li>Football</li>
+                    <li>F1</li> 
+                    <li>Chess</li>
                 </ol>
                 <form action="/my-handling-form-page"> <!--Form element is used to create an HTML form for user input. action attribute defines where to send the form data when a form is submitted.-->
+                    <fieldset>
+                        <legend> Doess your sport require a ball? </legend> <!-- Caption for field set.-->
+                        <label><input id="ball" name="ball" type="radio" value="ball">Includes ball<br></label> <!--Radio for one specfic answer. label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). id attribute defines a unique id for the input element.-->
+                        <label><input id="no ball" name="ball" checked type="radio" value="no ball">Doesn't include balls<br></label>
+                    </fieldset> <!--Both radio buttons have same name attribute so that only one option can be selected at a time. Value attribute defines the value of the input element.-->
+                    <!--Fieldset element is used to group related elements in a form.-->
+                    <br>
                     <input type="text" name="game" placeholder="Enter your favourite sports" required> <!--Input element is used to create input fields. type defines the type of input field. name defines the name of the input field. placeholder defines the placeholder text. required makes the input field required. -->
                     <button type="submit">Submit</button>
                 </form>
+                <fieldset>
+                    <legend>Choose one</legend>
+                    <label><input id="GOAT" name="GOAT"     type="radio" value="GOAT"><Label></Label>LIONEL ANDRÉS MESSI CUCCITTINI<br></label>
+                    <label><input id="GOAT" name="GOAT"     type="radio" value="GOAT"> CRISTIANO RONALDO DOS SANTOS AVEIRO<br></label>
             </section>
         </body>
     </main> <!--Main section of the webpage.-->
+    <footer> <!--Footer tag is used to create footers in a webpage.-->
+        <p>© Copyright 2024 | All Rights Reserved by <a href="https://github.com/mikky-mlh" target="_blank">Mikky</a></p>
+    </footer>
+</html>
 </html> 
