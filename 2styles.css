@@ -1,0 +1,18 @@
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', sans-serif;
+}
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', serif;
+}
+body {
+    background-color: burlywood;
+}
