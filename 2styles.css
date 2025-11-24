@@ -1,31 +1,35 @@
 body {
-    background-color: burlywood;
-    font-family: sans-serif;
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-color: burlywood; 
+    font-family: sans-serif; 
+    padding: 20px; 
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); 
 }
 
-.menu {
+.menu { /* .classname: selects elements with class="menu" */
     background-color: burlywood;
     padding: 20px;
-    margin-left : auto;
+    margin-left : auto; /* auto margins center the element horizontally */
     margin-right: auto;
-    width: 80%;
-    max-width: 500px;
+    width: 80%; 
+    max-width: 500px; /* Limits maximum width in pixels */
 }
 
-h1, h2, p {
-    text-align: center;
+h1, h2, p { 
+    text-align: center; 
 }
 h1, h2 {
-    color: white;
+    color: white; 
     text-align: center;
-    font-family: Impact, sans-serif;
+    font-family: Impact, sans-serif; 
 }
 
-h1{
-    font-size: 40px;
+h1 {
+    font-size: 40px; 
+    margin-top: 0; 
+    margin-bottom: 15px;
 }
-h2{
+
+h2 {
     font-size: 30px;
 }
 
@@ -34,13 +38,58 @@ h2{
 }
 
 .flavor, .dessert {
-    text-align: left;
-    width: 75%;
+    text-align: left; 
+    width: 75%; 
 }
 .price {
-    text-align: right;
-    width: 25%;
+    text-align: right; 
+    width: 25%; 
 }
-.item p {
-    display: inline-block;
+.item p { /* Selects p elements inside .item class */
+    display: inline-block; /* Makes block elements sit side-by-side while respecting width */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+img {
+    display: block; /* Makes image take full width, starts on new line */
+    margin-top: -25px; /* Negative margin pulls element upward */
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+hr {
+    height: 2px; 
+    background-color: brown;
+    border-color: brown; 
+}
+
+.bottom-line {
+    margin-top: 25px; /* Adds extra space above this specific hr */
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px; /* Makes footer text smaller */
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a { 
+    color: black;
+}
+
+a:visited { 
+    color: black;
+}
+
+a:hover { 
+    color: brown;
+}
+
+a:active { 
+    color: black;
 }
